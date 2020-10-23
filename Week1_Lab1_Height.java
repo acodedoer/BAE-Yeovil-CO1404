@@ -20,10 +20,11 @@ public class SimpleOperators {
 		System.out.print("Enter your second neighbours height: ");
 		neighbourHeight2 = sc.nextInt();
 
-		averageHeight = ((userHeight + neighbourHeight1 + neighbourHeight2)/3) * 2.54;
+		averageHeight = ((userHeight + neighbourHeight1 + neighbourHeight2)/3);
 		
-//		System.out.print("Average Height: "+averageHeight);
-		System.out.format("%.1f", averageHeight);
+		System.out.format("%.0f", averageHeight/12);
+		System.out.println(" feet " + averageHeight % 12 + " inches");
+		//System.out.format("%.1f", averageHeight);
 	}
 
 }
